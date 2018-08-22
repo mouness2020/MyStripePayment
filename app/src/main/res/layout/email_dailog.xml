@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    android:layout_width='fill_parent'
+    android:layout_height='fill_parent'
+    android:orientation='vertical'
+    android:padding='10sp' >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_margin="5dp"
+        android:text="الرجاء ادخال الايميل سوف يتم ارسال رمز على الايميل لكي يتم التحقق من الايميل"/>
+    <EditText
+        android:id='@+id/email_address'
+        android:layout_width='fill_parent'
+        android:layout_height='wrap_content'
+        android:hint='ادخل الايميل'
+        android:singleLine='true'
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:gravity="right">
+
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id='@+id/code'
+        android:layout_width='fill_parent'
+        android:layout_height='wrap_content'
+        android:hint='ادخل الكود المرسل على البريد الالكتروني'
+        android:singleLine='true'
+        android:inputType="number"
+        android:textSize="15sp"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <requestFocus />
+    </EditText>
+
+    <!--<EditText-->
+        <!--android:id='@+id/login_password'-->
+        <!--android:layout_width='match_parent'-->
+        <!--android:layout_height='wrap_content'-->
+        <!--android:hint='Password'-->
+        <!--android:ems='10'-->
+        <!--android:inputType='textPassword' >-->
+    <!--</EditText>-->
+
+</LinearLayout>

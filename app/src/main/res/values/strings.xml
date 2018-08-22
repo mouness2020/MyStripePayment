@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Stripe Payment</string>
+
+    <string name="manageOrder">"ادارة الاشتراك "</string>
+    <string name="subsDisc">"يمكنك الان الاشتراك والاستمرار بدعم التطبيق وايضا ازالة الاعلانات وتصدير الخطب والدروس المحملة الي ملفات mp3 عن طريق تبويب الدروس المحملة وكل ذلك برسوم رمزية وجزاك الله خيرا "</string>
+    <string name="sub12month">ازالة الاعلانات لمدة 1 سنة ب</string>
+    <string name="sub1month">ازالة الاعلانات لمدة  شهر ب</string>
+    <string name="sub6month">ازالة الاعلانات لمدة 6 شهور ب</string>
+    <string name="subsNow">اشترك الان</string>
+    <string name="title_activity_payment">شاشة الدفع</string>
+    <string name="title_activity_my_strip">تفاصيل الاشتراك</string>
+
+</resources>

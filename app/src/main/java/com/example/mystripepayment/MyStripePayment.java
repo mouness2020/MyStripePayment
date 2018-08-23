@@ -17,7 +17,10 @@ import static com.example.mystripepayment.Utils.getClientEmail;
 public class MyStripePayment {
 
     public static String serverURL = "https://islamicency.com/stripe/quran/";
-    public static String pk_key = "pk_test_WB4m4bC3fHGcOsXgjK2i5BYm";
+    //public static String pk_key = "pk_test_WB4m4bC3fHGcOsXgjK2i5BYm";
+    public static String pk_key = "pk_live_2BMUz3cksVJYwui1fnkcbdF8";
+
+
     public static String package_name = "";
 
     public static onActiveSubscriptionResult result = null;

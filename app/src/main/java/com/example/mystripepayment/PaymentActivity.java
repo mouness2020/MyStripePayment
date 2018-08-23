@@ -189,10 +189,20 @@ public class PaymentActivity extends AppCompatActivity {
                             public void onError(Exception error) {
                                 hideProgress();
                                 // Show localized error message
-                                Toast.makeText(PaymentActivity.this,
-                                        error.getLocalizedMessage(),
-                                        Toast.LENGTH_LONG
-                                ).show();
+
+                                if(error.hashCode() == 402){
+
+                                    Toast.makeText(PaymentActivity.this,
+                                            "تم رفض بطاقتك الرجاء المحاولة مرة اخرى",
+                                            Toast.LENGTH_LONG
+                                    ).show();
+                                }
+                                else{
+                                    Toast.makeText(PaymentActivity.this,
+                                            error.getLocalizedMessage(),
+                                            Toast.LENGTH_LONG
+                                    ).show();
+                                }
                             }
                         }
                 );
@@ -247,6 +257,11 @@ public class PaymentActivity extends AppCompatActivity {
                         doSubscription(response.body().getCustomer().getId(), plan_id,subscription_id);
 
                     }
+                }
+                else{
+
+                    Toast.makeText(PaymentActivity.this, "حدث خطأ ما اثناء اضافة البطاقة" + "", Toast.LENGTH_LONG).show();
+
                 }
 
             }

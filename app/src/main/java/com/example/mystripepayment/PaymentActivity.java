@@ -343,7 +343,7 @@ public class PaymentActivity extends AppCompatActivity {
                     if (response.body().getSubscription() != null) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(PaymentActivity.this);
-                        builder.setMessage("تم الاشتراك بنجاح.. شكرا لك.")
+                        builder.setMessage("تم الاشتراك بنجاح.. شكرا لك.").setCancelable(false)
                                 .setPositiveButton("موافق", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
                                         // FIRE ZE MISSILES!

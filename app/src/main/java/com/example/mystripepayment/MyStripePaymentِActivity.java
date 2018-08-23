@@ -43,7 +43,8 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
 
     private Button btnGetPayment;
 
-    private String plan_id = "";
+    private Plan plan = null;
+
 
     private ProgressDialog pr;
 
@@ -146,7 +147,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
         } else {
 
             if(!isThereActiveSubscription) {
-                plan_id = (String) btn.getTag();
+                plan = (Plan) btn.getTag();
 
                 String email = getClientEmail(MyStripePaymentِActivity.this);
                 if (email != null) {
@@ -193,15 +194,15 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                             if (plan.getInterval().equals("month") && plan.getIntervalCount() == 1) {
 
 
-                                btn1month.setTag(plan.getId() + "");
+                                btn1month.setTag(plan);
                                 txt1month.setText(txt1month.getText() + " " + (plan.getAmount() / 100.0) + "" + plan.getCurrency().replace("usd", "$"));
                             } else if (plan.getInterval().equals("month") && plan.getIntervalCount() == 6) {
 
-                                btn6month.setTag(plan.getId() + "");
+                                btn6month.setTag(plan);
                                 txt6month.setText(txt6month.getText() + " " + (plan.getAmount() / 100.0) + "" + plan.getCurrency().replace("usd", "$"));
                             } else if (plan.getInterval().equals("year") && plan.getIntervalCount() == 1) {
 
-                                btn12month.setTag(plan.getId() + "");
+                                btn12month.setTag(plan);
                                 txt12month.setText(txt12month.getText() + " " + (plan.getAmount() / 100.0) + "" + plan.getCurrency().replace("usd", "$"));
                             }
                         }
@@ -234,7 +235,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
 
-                hideProgress();
+
                 Log.e("Tag", response.message());
 
                 if (response.body() != null && response.body().getResponse() != null && response.body().getResponse().equals("Success")) {
@@ -252,7 +253,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                             if (subscription.getPlan().getInterval().equals("month") && subscription.getPlan().getIntervalCount() == 1) {
 
                                 btn1month.setText("تم الاشتراك");
-                                btn1month.setTag(subscription.getPlan().getId() + "");
+                                btn1month.setTag(subscription.getPlan());
 
                                 isThereActiveSubscription = true;
                                 txtSubscriptionDesc.setText("اشتراك لمدة شهر وينتهي بتاريخ " + getDate(subscription.getCurrentPeriodEnd()));
@@ -260,7 +261,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                             } else if (subscription.getPlan().getInterval().equals("month") && subscription.getPlan().getIntervalCount() == 6) {
 
                                 btn6month.setText("تم الاشتراك");
-                                btn6month.setTag(subscription.getPlan().getId() + "");
+                                btn6month.setTag(subscription.getPlan());
 
                                 isThereActiveSubscription = true;
                                 txtSubscriptionDesc.setText("اشتراك لمدة 6 شهور وينتهي بتاريخ " + getDate(subscription.getCurrentPeriodEnd()));
@@ -269,7 +270,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                             } else if (subscription.getPlan().getInterval().equals("year") && subscription.getPlan().getIntervalCount() == 1) {
 
                                 btn12month.setText("تم الاشتراك");
-                                btn12month.setTag(subscription.getPlan().getId() + "");
+                                btn12month.setTag(subscription.getPlan());
 
                                 isThereActiveSubscription = true;
                                 txtSubscriptionDesc.setText("اشتراك لمدة 12 شهر وينتهي بتاريخ " + getDate(subscription.getCurrentPeriodEnd()));
@@ -309,7 +310,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                         }
                     }
                 }
-
+                hideProgress();
             }
 
             @Override
@@ -383,10 +384,14 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
 
                         Intent intent = new Intent(MyStripePaymentِActivity.this, PaymentActivity.class);
                         intent.putExtra("email", email);
-                        intent.putExtra("plan_id", plan_id);
+                        if(plan != null) {
+                            intent.putExtra("plan_id", plan.getId());
+                            intent.putExtra("currency", plan.getCurrency());
+                            intent.putExtra("amount",(long)plan.getAmount());
+                        }
 
-                        if(MyStripePaymentِActivity.this.subscription != null) {
-                            intent.putExtra("subscription_id", MyStripePaymentِActivity.this.subscription.getId());
+                        if(subscription != null) {
+                            intent.putExtra("subscription_id",subscription.getId());
                         }
 
                         startActivityForResult(intent,1234);

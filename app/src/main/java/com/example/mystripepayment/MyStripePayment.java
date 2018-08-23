@@ -18,11 +18,13 @@ public class MyStripePayment {
 
     public static String serverURL = "https://islamicency.com/stripe/quran/";
     public static String pk_key = "pk_test_WB4m4bC3fHGcOsXgjK2i5BYm";
+    public static String package_name = "";
 
     public static onActiveSubscriptionResult result = null;
 
     public static void startPaymentActivityِ(Activity activity,final onActiveSubscriptionResult resultSubs){
 
+        package_name = activity.getApplicationContext().getPackageName();
 
         Intent intent = new Intent(activity,MyStripePaymentِActivity.class);
 

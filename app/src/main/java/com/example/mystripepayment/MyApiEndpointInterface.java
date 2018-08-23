@@ -34,6 +34,10 @@ public interface MyApiEndpointInterface {
 
     @FormUrlEncoded
     @POST("subscription.php")
+    Call<BaseResponse> postSubscription(@Field("email") String email, @Field("plan") String plan_id,@Field("source")String source,@Field("card_token")String card_token);//do subsc
+
+    @FormUrlEncoded
+    @POST("subscription.php")
     Call<BaseResponse> getSubscription(@Field("email") String email);//get active subscr
 
     @FormUrlEncoded
@@ -43,4 +47,9 @@ public interface MyApiEndpointInterface {
     @FormUrlEncoded
     @POST("subscription.php")
     Call<BaseResponse> postUpgradeDownGradeSubscription(@Field("subscription") String subscription_id, @Field("plan") String plan_id);//upgrade downgrade
+
+    @FormUrlEncoded
+    @POST("addcard.php")
+    Call<BaseResponse> postAddCard(@Field("customer") String customer_id, @Field("source") String source);// add card for 3d secure
+
 }

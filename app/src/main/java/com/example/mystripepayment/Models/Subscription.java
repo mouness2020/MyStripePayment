@@ -40,6 +40,8 @@ import java.util.Map;
 })
 public class Subscription {
 
+    @JsonProperty("response")
+    private String response;
     @JsonProperty("id")
     private String id;
     @JsonProperty("object")
@@ -88,6 +90,16 @@ public class Subscription {
     private Object trialStart;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    @JsonProperty("response")
+    public String getResponse() {
+        return response;
+    }
+
+    @JsonProperty("response")
+    public void setResponse(String response) {
+        this.response = response;
+    }
 
     @JsonProperty("id")
     public String getId() {

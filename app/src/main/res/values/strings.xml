@@ -9,5 +9,6 @@
     <string name="subsNow">اشترك الان</string>
     <string name="title_activity_payment">شاشة الدفع</string>
     <string name="title_activity_my_strip">تفاصيل الاشتراك</string>
+    <string name="title_activity_web">استكمال اجراءات التحقق</string>
 
 </resources>

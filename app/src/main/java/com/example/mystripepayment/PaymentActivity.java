@@ -122,6 +122,8 @@ public class PaymentActivity extends AppCompatActivity {
                                                 String threeDStatus = cardData.getThreeDSecureStatus();
                                                 if (SourceCardData.REQUIRED.equals(threeDStatus)) {
 
+                                                    hideProgress();
+
                                                     Utils.showMessage("خطأ","البطاقة الخاصة بك غير مدعومه بسبب البنك يضع قيود الزامية في التحقق",PaymentActivity.this);
 
                                                   /* String cardSourceId = cardSource.getId();
@@ -170,7 +172,6 @@ public class PaymentActivity extends AppCompatActivity {
 
                                                     // the value will be SourceCardData.NOT_SUPPORTED, and you're free to charge the card.
                                                 }
-                                                hideProgress();
                                             }
 
                                             @Override
@@ -247,7 +248,6 @@ public class PaymentActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<BaseResponse> call, Response<BaseResponse> response) {
 
-                hideProgress();
                 Log.e("Tag", response.message());
 
                 if (response.body() != null && response.body().getResponse() != null && response.body().getResponse().equals("Success")) {
@@ -259,8 +259,13 @@ public class PaymentActivity extends AppCompatActivity {
                         doSubscription(response.body().getCustomer().getId(), plan_id,subscription_id);
 
                     }
+                    else{
+                        hideProgress();
+                    }
                 }
                 else{
+
+                    hideProgress();
 
                     Toast.makeText(PaymentActivity.this, "حدث خطأ ما اثناء اضافة البطاقة" + "", Toast.LENGTH_LONG).show();
 
@@ -397,16 +402,23 @@ public class PaymentActivity extends AppCompatActivity {
     }
 
     public void showProgress(String content) {
-        pr.setMessage(content);
-        if (!pr.isShowing()) {
-            pr.show();
+       try {
+           pr.setMessage(content);
+           if (!pr.isShowing()) {
+               pr.show();
 
-        }
-
+           }
+       }catch (Exception e){
+           e.printStackTrace();
+       }
     }
 
     public void hideProgress() {
-        if (pr.isShowing()) pr.dismiss();
+        try {
+            if (pr.isShowing()) pr.dismiss();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

@@ -310,6 +310,11 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                         }
                     }
                 }
+                else{
+                    if(MyStripePayment.result != null) {
+                        MyStripePayment.result.noSubscription();
+                    }
+                }
                 hideProgress();
             }
 

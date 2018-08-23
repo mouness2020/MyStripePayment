@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f9877d17-b36f-474c-add0-1f6b875ad666" name="Default" comment="v1 23 08 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +35,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PaymentActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaymentActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -50,6 +51,16 @@
                 <element signature="e#16475#16476#0" expanded="true" />
                 <element signature="e#16523#16524#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyStripePayment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="83" selection-start-column="18" selection-end-line="84" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,16 +111,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyStripePaymentِActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyStripePaymentِActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="312" column="31" lean-forward="false" selection-start-line="312" selection-start-column="31" selection-end-line="312" selection-end-column="31" />
+            <state relative-caret-position="197">
+              <caret line="299" column="20" lean-forward="true" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
               <folding>
+                <element signature="method#cancelSubscriptions#0;class#MyStripePaymentِActivity#0" expanded="false" />
                 <element signature="method#showSubscriptionDetailsDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
                 <element signature="method#showEmailVerfiyDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
-                <element signature="e#20912#20913#0" expanded="true" />
-                <element signature="e#20960#20961#0" expanded="true" />
+                <element signature="e#21096#21097#0" expanded="true" />
+                <element signature="e#21144#21145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,6 +146,8 @@
       <find>response</find>
       <find>getc</find>
       <find>تم ال</find>
+      <find>if (subscription != null) {</find>
+      <find>getac</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment</dir>
@@ -3143,17 +3157,17 @@
         <option value="$PROJECT_DIR$/sample/build.gradle" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/example/sample/MainActivity.java" />
         <option value="$PROJECT_DIR$/sample/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_web.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/WebActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/Models/Subscription.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyApiEndpointInterface.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_payment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java" />
       </list>
     </option>
   </component>
@@ -3553,7 +3567,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -3639,7 +3653,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java</url>
-          <line>318</line>
+          <line>323</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -3801,14 +3815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -3854,19 +3860,6 @@
         <state relative-caret-position="255">
           <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="312" column="31" lean-forward="false" selection-start-line="312" selection-start-column="31" selection-end-line="312" selection-end-column="31" />
-          <folding>
-            <element signature="method#showSubscriptionDetailsDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
-            <element signature="method#showEmailVerfiyDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
-            <element signature="e#20912#20913#0" expanded="true" />
-            <element signature="e#20960#20961#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3955,6 +3948,28 @@
             <element signature="e#15366#15367#0" expanded="true" />
             <element signature="e#16475#16476#0" expanded="true" />
             <element signature="e#16523#16524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="83" selection-start-column="18" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePaymentِActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="299" column="20" lean-forward="true" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
+          <folding>
+            <element signature="method#cancelSubscriptions#0;class#MyStripePaymentِActivity#0" expanded="false" />
+            <element signature="method#showSubscriptionDetailsDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
+            <element signature="method#showEmailVerfiyDialog#0;class#MyStripePaymentِActivity#0" expanded="false" />
+            <element signature="e#21096#21097#0" expanded="true" />
+            <element signature="e#21144#21145#0" expanded="true" />
           </folding>
         </state>
       </provider>

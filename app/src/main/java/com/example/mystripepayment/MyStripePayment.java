@@ -74,7 +74,15 @@ public class MyStripePayment {
 
                         }
 
+                    }else{
+
+                        result.noSubscription();
+
                     }
+                }else{
+
+                    result.noSubscription();
+
                 }
 
             }

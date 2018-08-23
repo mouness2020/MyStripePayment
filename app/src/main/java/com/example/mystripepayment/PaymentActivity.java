@@ -189,13 +189,15 @@ public class PaymentActivity extends AppCompatActivity {
                             public void onError(Exception error) {
                                 hideProgress();
                                 // Show localized error message
+                                if(error instanceof CardException) {
+                                    CardException exception = ((CardException) error);
+                                    if(exception.getCode().contains("card_declined")){
 
-                                if(error.hashCode() == 402){
-
-                                    Toast.makeText(PaymentActivity.this,
-                                            "تم رفض بطاقتك الرجاء المحاولة مرة اخرى",
-                                            Toast.LENGTH_LONG
-                                    ).show();
+                                        Toast.makeText(PaymentActivity.this,
+                                                "تم رفض بطاقتك الرجاء المحاولة مرة اخرى" + " " +exception.getDeclineCode() + "",
+                                                Toast.LENGTH_LONG
+                                        ).show();
+                                    }
                                 }
                                 else{
                                     Toast.makeText(PaymentActivity.this,

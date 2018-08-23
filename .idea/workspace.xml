@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9877d17-b36f-474c-add0-1f6b875ad666" name="Default" comment="v1 23 08 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/MyStripePayment.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,17 +37,17 @@
       <file leaf-file-name="PaymentActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="271" column="31" lean-forward="true" selection-start-line="271" selection-start-column="31" selection-end-line="271" selection-end-column="31" />
+            <state relative-caret-position="124">
+              <caret line="192" column="48" lean-forward="false" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
               <folding>
-                <element signature="e#2967#9809#0" expanded="true" />
-                <element signature="e#9808#9809#0" expanded="true" />
-                <element signature="e#13028#13404#0" expanded="true" />
-                <element signature="e#13403#13404#0" expanded="true" />
-                <element signature="e#15608#15984#0" expanded="true" />
-                <element signature="e#15983#15984#0" expanded="true" />
-                <element signature="e#17092#17093#0" expanded="true" />
-                <element signature="e#17140#17141#0" expanded="true" />
+                <element signature="e#2967#10083#0" expanded="true" />
+                <element signature="e#10082#10083#0" expanded="true" />
+                <element signature="e#13302#13678#0" expanded="true" />
+                <element signature="e#13677#13678#0" expanded="true" />
+                <element signature="e#15882#16258#0" expanded="true" />
+                <element signature="e#16257#16258#0" expanded="true" />
+                <element signature="e#17366#17367#0" expanded="true" />
+                <element signature="e#17414#17415#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3596,31 +3595,31 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>250</line>
+          <line>252</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>271</line>
+          <line>273</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>354</line>
+          <line>356</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>387</line>
+          <line>389</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>347</line>
+          <line>349</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -3632,31 +3631,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>243</line>
+          <line>245</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>283</line>
+          <line>285</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>289</line>
+          <line>291</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>325</line>
+          <line>327</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>227</line>
+          <line>229</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -3665,12 +3664,6 @@
           <line>323</line>
           <properties />
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java</url>
@@ -4004,17 +3997,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mystripepayment/PaymentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="271" column="31" lean-forward="true" selection-start-line="271" selection-start-column="31" selection-end-line="271" selection-end-column="31" />
+        <state relative-caret-position="124">
+          <caret line="192" column="48" lean-forward="false" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
           <folding>
-            <element signature="e#2967#9809#0" expanded="true" />
-            <element signature="e#9808#9809#0" expanded="true" />
-            <element signature="e#13028#13404#0" expanded="true" />
-            <element signature="e#13403#13404#0" expanded="true" />
-            <element signature="e#15608#15984#0" expanded="true" />
-            <element signature="e#15983#15984#0" expanded="true" />
-            <element signature="e#17092#17093#0" expanded="true" />
-            <element signature="e#17140#17141#0" expanded="true" />
+            <element signature="e#2967#10083#0" expanded="true" />
+            <element signature="e#10082#10083#0" expanded="true" />
+            <element signature="e#13302#13678#0" expanded="true" />
+            <element signature="e#13677#13678#0" expanded="true" />
+            <element signature="e#15882#16258#0" expanded="true" />
+            <element signature="e#16257#16258#0" expanded="true" />
+            <element signature="e#17366#17367#0" expanded="true" />
+            <element signature="e#17414#17415#0" expanded="true" />
           </folding>
         </state>
       </provider>

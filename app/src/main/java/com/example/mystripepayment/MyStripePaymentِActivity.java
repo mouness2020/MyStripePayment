@@ -594,7 +594,14 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
     }
 
     public void hideProgress() {
-        if (pr.isShowing()) pr.dismiss();
+        try {
+
+            if (pr.isShowing()) pr.dismiss();
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

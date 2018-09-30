@@ -26,8 +26,8 @@ android {
         //applicationId "com.example.mystripepayment"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 6
-        versionName "2.3.1"
+        versionCode 7
+        versionName "3.0.0"
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 }

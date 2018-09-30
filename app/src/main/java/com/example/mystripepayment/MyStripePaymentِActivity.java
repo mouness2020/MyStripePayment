@@ -291,7 +291,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                             }
                             if(isGetPayment){
                                 saveClientEmail(MyStripePaymentِActivity.this,  null);
-                                Utils.showMessage("رسالة","لا يوجد اشتراك فعال على هذا الايميل" ,MyStripePaymentِActivity.this);
+                                Utils.showMessage("رسالة","لا يوجد اشتراك فعال على هذا البريد الالكتروني" ,MyStripePaymentِActivity.this);
                             }
 
                         }
@@ -306,7 +306,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
                         }
                         if(isGetPayment){
                             saveClientEmail(MyStripePaymentِActivity.this,  null);
-                            Utils.showMessage("رسالة","لا يوجد اشتراك فعال على هذا الايميل" ,MyStripePaymentِActivity.this);
+                            Utils.showMessage("رسالة","لا يوجد اشتراك فعال على هذا البريد الالكتروني" ,MyStripePaymentِActivity.this);
                         }
                     }
                 }
@@ -546,7 +546,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
         //final EditText pass = (EditText) prompt.findViewById(R.id.login_password);
         //user.setText(Login_USER); //login_USER and PASS are loaded from previous session (optional)
         //pass.setText(Login_PASS);
-        alertDialogBuilder.setTitle("الرجاء ادخال الايميل");
+        alertDialogBuilder.setTitle("الرجاء ادخال البريد الالكتروني");
         alertDialogBuilder.setCancelable(false)
                 .setPositiveButton("تحقق", new DialogInterface.OnClickListener() {
                     @Override

@@ -11,12 +11,12 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:layout_margin="5dp"
-        android:text="الرجاء ادخال الايميل سوف يتم ارسال رمز على الايميل لكي يتم التحقق من الايميل"/>
+        android:text="الرجاء ادخال البريد الالكتروني بشكل صحيح"/>
     <EditText
         android:id='@+id/email_address'
         android:layout_width='fill_parent'
         android:layout_height='wrap_content'
-        android:hint='ادخل الايميل'
+        android:hint='البريد الالكتروني'
         android:singleLine='true'
         android:inputType="textEmailAddress"
         android:textSize="15sp"

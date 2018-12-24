@@ -21,23 +21,23 @@ allprojects {
 
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         //applicationId "com.example.mystripepayment"
-        minSdkVersion 15
-        targetSdkVersion 27
-        versionCode 7
-        versionName "3.0.0"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 8
+        versionName "3.0.1"
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 }
 
 dependencies {
     //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
-    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.stripe:stripe-android:8.1.0'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-jackson:2.4.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'

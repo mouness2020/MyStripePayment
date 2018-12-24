@@ -215,7 +215,7 @@ public class MyStripePaymentِActivity extends AppCompatActivity {
             public void onFailure(Call<BaseResponse> call, Throwable t) {
 
                 hideProgress();
-                Log.e("Tag", t.getLocalizedMessage());
+                //Log.e("Tag", t.getLocalizedMessage());
 
             }
         });
